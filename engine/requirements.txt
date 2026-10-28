@@ -1,0 +1,13 @@
+# Installed by Vybe Studio into its private virtualenv (torch is installed separately).
+fastapi>=0.115
+uvicorn>=0.30
+huggingface_hub>=0.34
+transformers>=4.49
+diffusers>=0.42
+accelerate>=1.0
+safetensors
+sentencepiece
+soundfile>=0.12
+numpy
+scipy
+demucs>=4.0.1

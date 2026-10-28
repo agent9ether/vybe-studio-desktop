@@ -1,0 +1,29 @@
+[project]
+name = "vybe-engine"
+version = "0.1.0"
+description = "Local inference server for Vybe Studio: open-source music generation and stem separation."
+requires-python = ">=3.10,<3.13"
+license = { text = "MIT" }
+dependencies = [
+  "fastapi>=0.115",
+  "uvicorn>=0.30",
+  "huggingface_hub>=0.34",
+  "transformers>=4.49",
+  "diffusers>=0.42",
+  "accelerate>=1.0",
+  "safetensors",
+  "sentencepiece",
+  "soundfile>=0.12",
+  "numpy",
+  "scipy",
+  "demucs>=4.0.1",
+]
+# torch / torchaudio are installed separately by the app so it can pick the
+# right CUDA / CPU / MPS wheel for your machine.
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["vybe_engine", "vybe_engine.backends"]

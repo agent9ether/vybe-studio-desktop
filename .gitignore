@@ -1,0 +1,21 @@
+node_modules
+out
+release
+dist
+*.log
+.env
+.env.*
+!.env.example
+.DS_Store
+.vscode/*
+!.vscode/extensions.json
+.idea
+
+# Python engine
+engine/.venv
+__pycache__/
+*.pyc
+*.egg-info/
+
+# Local data created while developing
+/.vybe-data
